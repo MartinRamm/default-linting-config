@@ -1,0 +1,24 @@
+{
+  "extends": "@tsconfig/node16-strictest/tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "preserveConstEnums": true,
+    "baseUrl": ".",
+    "noImplicitAny": true,
+    "allowJs": false,
+    "checkJs": false,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "paths": {
+      "src/*": ["./src/*"]
+    }
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}

@@ -1,23 +1,23 @@
 ## Default setup includes:
 
 * typescript (obviously)
-  * @tsconfig/node14
+  * @tsconfig/node16-strictest
 * tsc-alias (so all imports can be absolute and not relative)
 
-Testing: 
+Testing:
 * Unit: ts-jest and jest
 * Typescript: expect-type
-  
-Linting: 
+
+Linting:
 * prettier
 * eslint
   * @typescript-eslint/eslint-plugin
   * @typescript-eslint/parser
-  * eslint-config-prettie
-  * eslint-plugin-filename
-  * eslint-plugin-folder
+  * eslint-config-prettier
+  * eslint-plugin-filenames
+  * eslint-plugin-folders
   * eslint-plugin-import
   * eslint-plugin-jest
-  * eslint-plugin-prettie
-  * eslint-plugin-ts-immutabl
-  * expect-type
+  * eslint-plugin-prettier
+  * eslint-plugin-security
+  * eslint-plugin-ts-immutable

@@ -1,0 +1,32 @@
+{
+  "name": "backend-q1-2022",
+  "scripts": {
+    "_base-lint": "eslint --max-warnings 0 --ext '.ts,.js'",
+    "lint": "npm run _base-lint -- ./",
+    "lint-fix": "npm run lint -- --fix",
+    "test": "npm run _test-ts && npm run _test-unit",
+    "_test-ts": "./node_modules/.bin/tsc --build ./tsconfig-test.json",
+    "_test-unit": "./node_modules/.bin/jest",
+    "build": "rm -rf dist/ && ./node_modules/.bin/tsc --build ./tsconfig.json && ./node_modules/.bin/tsc-alias -p tsconfig.json"
+  },
+  "devDependencies": {
+    "@tsconfig/node16-strictest": "*",
+    "@typescript-eslint/eslint-plugin": "*",
+    "@typescript-eslint/parser": "*",
+    "eslint": "*",
+    "eslint-config-prettier": "*",
+    "eslint-plugin-filenames": "*",
+    "eslint-plugin-folders": "*",
+    "eslint-plugin-import": "*",
+    "eslint-plugin-jest": "*",
+    "eslint-plugin-prettier": "*",
+    "eslint-plugin-security": "*",
+    "eslint-plugin-ts-immutable": "*",
+    "expect-type": "*",
+    "jest": "*",
+    "prettier": "*",
+    "ts-jest": "*",
+    "tsc-alias": "*",
+    "typescript": "*"
+  }
+}

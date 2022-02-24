@@ -21,9 +21,11 @@ module.exports = {
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
 
     'prettier',
+
+    'plugin:security/recommended',
   ],
 
-  plugins: ['@typescript-eslint', 'prettier', 'ts-immutable', 'folders', 'import', 'filenames'],
+  plugins: ['@typescript-eslint', 'prettier', 'ts-immutable', 'folders', 'import', 'filenames', 'security'],
 
   // add your custom rules here
   rules: {
@@ -58,7 +60,7 @@ module.exports = {
     'folders/match-regex': [2, '^[a-z][a-z-]+$', '/src/'],
 
     'import/no-default-export': 2,
-    'import/no-relative-parent-imports': 'error',
+    'import/no-relative-packages': 'error',
 
     'filenames/match-exported': 2,
 
@@ -112,7 +114,7 @@ module.exports = {
         format: ['UPPER_CASE'],
         leadingUnderscore: 'forbid',
         trailingUnderscore: 'forbid',
-        suffix: ['_ENUM']
+        suffix: ['_ENUM'],
       },
       {
         selector: 'enumMember',

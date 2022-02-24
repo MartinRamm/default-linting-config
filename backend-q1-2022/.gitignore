@@ -1,0 +1,15 @@
+#npm dependencies
+node_modules/
+
+#dist folder (ts build target)
+dist/
+
+# Log files
+npm-debug.log*
+
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
