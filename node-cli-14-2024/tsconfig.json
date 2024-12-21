@@ -1,0 +1,24 @@
+{
+  "extends": ["@tsconfig/strictest/tsconfig.json", "@tsconfig/node20/tsconfig.json"],
+  "compilerOptions": {
+    "declaration": false,
+    "preserveConstEnums": true,
+    "baseUrl": ".",
+    "noImplicitAny": true,
+    "allowJs": false,
+    "checkJs": false,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "noImplicitThis": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "noPropertyAccessFromIndexSignature": false,
+    "exactOptionalPropertyTypes": false,
+    "typeRoots": [
+      "node_modules/@types",
+    ],
+    "outDir": ".build/compiled",
+  },
+  "exclude": ["node_modules"]
+}
