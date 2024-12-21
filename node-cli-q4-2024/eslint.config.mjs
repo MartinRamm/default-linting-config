@@ -13,6 +13,7 @@ import filenamesPlugin from 'eslint-plugin-filenames';
 
 export default [
   {
+    files: ['**/*.ts', '**/*.cts', '**/*.mts', '**/*.tsx', '**/*.js', '**/*.jsx', '**/*.mjs', '**/*.cjs'],
     languageOptions: {
       parser,
       parserOptions: {
